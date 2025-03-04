@@ -7,7 +7,9 @@ import { AppProvider } from '@shopify/polaris'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AppProvider i18n={enTranslations}>
+    {/* @ts-ignore */}
+    <AppProvider
+      i18n={enTranslations}>
       <App />
     </AppProvider>
   </StrictMode>,
